@@ -7,21 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC3EB71B1EE3071900B7E30F /* LeituraQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3EB71A1EE3071900B7E30F /* LeituraQRCodeVC.swift */; };
+		BCC8968B1EE311AF00DDFDE3 /* LeituraCartaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8968A1EE311AF00DDFDE3 /* LeituraCartaoVC.swift */; };
+		BCC896961EE326F200DDFDE3 /* GenerateQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC896951EE326F200DDFDE3 /* GenerateQRCode.swift */; };
 		BCF56DFA1EE1CB6D0048556F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF56DF91EE1CB6D0048556F /* AppDelegate.swift */; };
-		BCF56DFC1EE1CB6D0048556F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF56DFB1EE1CB6D0048556F /* ViewController.swift */; };
+		BCF56DFC1EE1CB6D0048556F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF56DFB1EE1CB6D0048556F /* MainVC.swift */; };
 		BCF56DFF1EE1CB6D0048556F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF56DFD1EE1CB6D0048556F /* Main.storyboard */; };
 		BCF56E011EE1CB6D0048556F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF56E001EE1CB6D0048556F /* Assets.xcassets */; };
 		BCF56E041EE1CB6D0048556F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF56E021EE1CB6D0048556F /* LaunchScreen.storyboard */; };
+		F3E94518BF2878B9A846A738 /* Pods_Pay4All.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57695F047E8D662EBE558AC1 /* Pods_Pay4All.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57695F047E8D662EBE558AC1 /* Pods_Pay4All.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay4All.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7761016C0FDF32DF4B602F25 /* Pods-Pay4All.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay4All.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay4All/Pods-Pay4All.debug.xcconfig"; sourceTree = "<group>"; };
+		BC3EB71A1EE3071900B7E30F /* LeituraQRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeituraQRCodeVC.swift; sourceTree = "<group>"; };
+		BCC8968A1EE311AF00DDFDE3 /* LeituraCartaoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeituraCartaoVC.swift; sourceTree = "<group>"; };
+		BCC896911EE31FFE00DDFDE3 /* Pay4All-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pay4All-Bridging-Header.h"; sourceTree = "<group>"; };
+		BCC896951EE326F200DDFDE3 /* GenerateQRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateQRCode.swift; sourceTree = "<group>"; };
 		BCF56DF61EE1CB6D0048556F /* Pay4All.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pay4All.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF56DF91EE1CB6D0048556F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCF56DFB1EE1CB6D0048556F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCF56DFB1EE1CB6D0048556F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		BCF56DFE1EE1CB6D0048556F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCF56E001EE1CB6D0048556F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCF56E031EE1CB6D0048556F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCF56E051EE1CB6D0048556F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7888B1EFC8933AD738B080E /* Pods-Pay4All.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay4All.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay4All/Pods-Pay4All.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +40,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E94518BF2878B9A846A738 /* Pods_Pay4All.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC3EB71D1EE3098900B7E30F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BC3EB71E1EE3099500B7E30F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC3EB71A1EE3071900B7E30F /* LeituraQRCodeVC.swift */,
+				BCF56DFB1EE1CB6D0048556F /* MainVC.swift */,
+				BCC8968A1EE311AF00DDFDE3 /* LeituraCartaoVC.swift */,
+				BCC896951EE326F200DDFDE3 /* GenerateQRCode.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BC3EB71F1EE3099D00B7E30F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BCC8968C1EE3124F00DDFDE3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		BCF56DED1EE1CB6D0048556F = {
 			isa = PBXGroup;
 			children = (
 				BCF56DF81EE1CB6D0048556F /* Pay4All */,
 				BCF56DF71EE1CB6D0048556F /* Products */,
+				FBAD2847BF7D4A95D25FA0BF /* Pods */,
+				BD3BC0478A1D4EAC267673D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +100,35 @@
 		BCF56DF81EE1CB6D0048556F /* Pay4All */ = {
 			isa = PBXGroup;
 			children = (
+				BCC8968C1EE3124F00DDFDE3 /* Util */,
+				BC3EB71F1EE3099D00B7E30F /* Model */,
+				BC3EB71E1EE3099500B7E30F /* Controller */,
+				BC3EB71D1EE3098900B7E30F /* View */,
 				BCF56DF91EE1CB6D0048556F /* AppDelegate.swift */,
-				BCF56DFB1EE1CB6D0048556F /* ViewController.swift */,
 				BCF56DFD1EE1CB6D0048556F /* Main.storyboard */,
 				BCF56E001EE1CB6D0048556F /* Assets.xcassets */,
 				BCF56E021EE1CB6D0048556F /* LaunchScreen.storyboard */,
 				BCF56E051EE1CB6D0048556F /* Info.plist */,
+				BCC896911EE31FFE00DDFDE3 /* Pay4All-Bridging-Header.h */,
 			);
 			path = Pay4All;
+			sourceTree = "<group>";
+		};
+		BD3BC0478A1D4EAC267673D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57695F047E8D662EBE558AC1 /* Pods_Pay4All.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBAD2847BF7D4A95D25FA0BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7761016C0FDF32DF4B602F25 /* Pods-Pay4All.debug.xcconfig */,
+				D7888B1EFC8933AD738B080E /* Pods-Pay4All.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCF56E081EE1CB6D0048556F /* Build configuration list for PBXNativeTarget "Pay4All" */;
 			buildPhases = (
+				E82F2EDEEC8C876BDD9930BC /* [CP] Check Pods Manifest.lock */,
 				BCF56DF21EE1CB6D0048556F /* Sources */,
 				BCF56DF31EE1CB6D0048556F /* Frameworks */,
 				BCF56DF41EE1CB6D0048556F /* Resources */,
+				3AAA649ED52E1890EED3C401 /* [CP] Embed Pods Frameworks */,
+				22FD16FD604538D6F83F9EF1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +167,7 @@
 					BCF56DF51EE1CB6D0048556F = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 7984M9FF87;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,12 +203,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22FD16FD604538D6F83F9EF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay4All/Pods-Pay4All-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AAA649ED52E1890EED3C401 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay4All/Pods-Pay4All-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E82F2EDEEC8C876BDD9930BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCF56DF21EE1CB6D0048556F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCF56DFC1EE1CB6D0048556F /* ViewController.swift in Sources */,
+				BCC896961EE326F200DDFDE3 /* GenerateQRCode.swift in Sources */,
+				BC3EB71B1EE3071900B7E30F /* LeituraQRCodeVC.swift in Sources */,
+				BCC8968B1EE311AF00DDFDE3 /* LeituraCartaoVC.swift in Sources */,
+				BCF56DFC1EE1CB6D0048556F /* MainVC.swift in Sources */,
 				BCF56DFA1EE1CB6D0048556F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,26 +383,33 @@
 		};
 		BCF56E091EE1CB6D0048556F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7761016C0FDF32DF4B602F25 /* Pods-Pay4All.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7984M9FF87;
 				INFOPLIST_FILE = Pay4All/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlosdoki.Pay4All;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pay4All/Pay4All-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		BCF56E0A1EE1CB6D0048556F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7888B1EFC8933AD738B080E /* Pods-Pay4All.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7984M9FF87;
 				INFOPLIST_FILE = Pay4All/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlosdoki.Pay4All;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pay4All/Pay4All-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +433,7 @@
 				BCF56E0A1EE1CB6D0048556F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

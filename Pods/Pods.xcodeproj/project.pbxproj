@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AB70A0450889399D7CF29AB2893BC0B /* Pods-Pay4All-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BC368B377177D85159A70164D12B5 /* Pods-Pay4All-dummy.m */; };
+		27871C809E39F02B2F3B7341F26D2B79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		3159D7CAFD56B809F40CA3330DA10889 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		42EF09C1B60869A9014C4EAE2A73B9E3 /* SlideMenuControllerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D23E688294F5FB2E11039F4026B6D24 /* SlideMenuControllerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = C484AD3D2DB329CCFAA24DFE40376412 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60CDA1672BE8EF806044F82533F78F4A /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD81AA9C6DC8AC90A0ED6DD52E7E4E4 /* SlideMenuController.swift */; };
+		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D944FB7E386A81BAE42E3CAB885A07C2 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6FC0733A38DF1C2AEFE58A537398701 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B3000E312F7856DD8A4E6EE4C39A2F13 /* Pods-Pay4All-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E0EBC26B03DCF79027546B0DE70B1EC /* Pods-Pay4All-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D976473B07CDBEA330F63BA6EB77CAC0 /* SlideMenuControllerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3189E7211F87E4CDEC1F187E2C9EAA34 /* SlideMenuControllerSwift-dummy.m */; };
+		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = BBFABB6BD182E11F5BD0C5A59AE3B88B /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C13E4FEBFBA2E4F97A08DFD86D35B9 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C40940BF0000F815AAC919204B56577 /* GoogleToolboxForMac-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24C27B0FC3E83DC552510538EEB29D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		A5F4DFF6BDD1B116525C91D7AFF7C04A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15A470DA377BB2EC194AF84296BCA747;
+			remoteInfo = SlideMenuControllerSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002FFA9B44389A302B88A3EF01566DA7 /* Pods-Pay4All.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pay4All.debug.xcconfig"; sourceTree = "<group>"; };
+		140A04154DBE223DAC0802D51CCB9B2B /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		1BF43F8072B95AA93F2DE0C59CD289B7 /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SlideMenuControllerSwift.framework; path = SlideMenuControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D23E688294F5FB2E11039F4026B6D24 /* SlideMenuControllerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-umbrella.h"; sourceTree = "<group>"; };
+		1FD81AA9C6DC8AC90A0ED6DD52E7E4E4 /* SlideMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = Source/SlideMenuController.swift; sourceTree = "<group>"; };
+		307F74C13AF9E147820976313C846E39 /* CardIO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIO.h; path = CardIO/CardIO.h; sourceTree = "<group>"; };
+		31246794DF8EB45019EBC970B8008BCB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3189E7211F87E4CDEC1F187E2C9EAA34 /* SlideMenuControllerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlideMenuControllerSwift-dummy.m"; sourceTree = "<group>"; };
+		39ADA47E6D6B3E3D7E7D879DC6D3E7A8 /* Pods-Pay4All-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pay4All-resources.sh"; sourceTree = "<group>"; };
+		4E0EBC26B03DCF79027546B0DE70B1EC /* Pods-Pay4All-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pay4All-umbrella.h"; sourceTree = "<group>"; };
+		536B330D4B2B0377ED54DD8699A8E590 /* libCardIO.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardIO.a; path = CardIO/libCardIO.a; sourceTree = "<group>"; };
+		6252E624C0470DB532297CC1C6C418D2 /* CardIOView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOView.h; path = CardIO/CardIOView.h; sourceTree = "<group>"; };
+		6780D85C5AF9B94BB9641229BB7AD94A /* CardIOUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOUtilities.h; path = CardIO/CardIOUtilities.h; sourceTree = "<group>"; };
+		67837ACA2E63C1AC5046B88AAE5ACAF2 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		6ABBFC626E50E672820DAF1C2B420188 /* Pods-Pay4All.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pay4All.release.xcconfig"; sourceTree = "<group>"; };
+		720985E196D2AD397747C014D677137C /* Pods-Pay4All-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pay4All-frameworks.sh"; sourceTree = "<group>"; };
+		726950EAA5920995FEC349C55BC9869D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73B880481DD32EA15A96EFB946495DD9 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewControllerDelegate.h; path = CardIO/CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		7B50E84786F59C5385CB3456F5E76620 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		80C0CBD23D72FD32BD06C6E79667EAE7 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOCreditCardInfo.h; path = CardIO/CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		8C40940BF0000F815AAC919204B56577 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		9133DB2AA196ECFA7EA9361CC99146A7 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewController.h; path = CardIO/CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		92265E8477503205652E62EAD057000A /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		960A94C4F3A4BA9ACC22061C45B180CC /* SlideMenuControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SlideMenuControllerSwift.modulemap; sourceTree = "<group>"; };
+		98C13E4FEBFBA2E4F97A08DFD86D35B9 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		991BC368B377177D85159A70164D12B5 /* Pods-Pay4All-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pay4All-dummy.m"; sourceTree = "<group>"; };
+		A0AF7CEF27A1B20BD60955BA7D75EA95 /* CardIODetectionMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIODetectionMode.h; path = CardIO/CardIODetectionMode.h; sourceTree = "<group>"; };
+		AA06913DD18BDDE7B53220C5862C4D0B /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		B30566FB769A4AC428B52AD9F790795A /* Pods-Pay4All-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pay4All-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B70479C47C402E195EFCCFFD33D58F23 /* Pods_Pay4All.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pay4All.framework; path = "Pods-Pay4All.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5958FF5C33EC6CD522FFFF1D672056 /* libopencv_core.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopencv_core.a; path = CardIO/libopencv_core.a; sourceTree = "<group>"; };
+		BBFABB6BD182E11F5BD0C5A59AE3B88B /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		C141CB56DF6362172E664F5CAB18B0B1 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOViewDelegate.h; path = CardIO/CardIOViewDelegate.h; sourceTree = "<group>"; };
+		C182C41935C364C3E1E0E068BCDD1DB5 /* SlideMenuControllerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-prefix.pch"; sourceTree = "<group>"; };
+		C484AD3D2DB329CCFAA24DFE40376412 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D12794A4D240E3640403F644F429F13B /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D944FB7E386A81BAE42E3CAB885A07C2 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		E9759DBA657AE4E2244D5F248A24D2A2 /* SlideMenuControllerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlideMenuControllerSwift.xcconfig; sourceTree = "<group>"; };
+		EA204748FCC3641DE5EAC190399DA0BC /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		ED4828D4B176434DE26794751870258E /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		EE34E3BC2A25B7C2F4E209D992676DD8 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		F44E86C86048AA288941090CC0E306C4 /* Pods-Pay4All.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Pay4All.modulemap"; sourceTree = "<group>"; };
+		F6AF5AC7A0578505E5062A24E507DDBF /* libopencv_imgproc.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopencv_imgproc.a; path = CardIO/libopencv_imgproc.a; sourceTree = "<group>"; };
+		FAECEA3E1197B0DE000031FF5ED9B115 /* Pods-Pay4All-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pay4All-acknowledgements.plist"; sourceTree = "<group>"; };
+		FE0A683D3CADADAF4A3AD149443524C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1323C9754226485C3D3863FE6B9A4D29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27871C809E39F02B2F3B7341F26D2B79 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F0387BCE5EB93E456A8C9CE5958B6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FC0733A38DF1C2AEFE58A537398701 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3159D7CAFD56B809F40CA3330DA10889 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03D1579A8A6A966D59BFB09A6018195F /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				4570A2A61B025B6EB1BD4464D6BE144D /* Defines */,
+				CDF84C83FE7BADB178A554CDE0006B59 /* NSData+zlib */,
+				A4B81FAD3B985C6EF2D0CC2E6BDE36F4 /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		100DE586E9494E27F9FF1272B63A1464 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				FA11742F70663BAF06508267E71074A5 /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		351EFA1CB6737A9D3D5FAB6BE141019E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE0A683D3CADADAF4A3AD149443524C3 /* Info.plist */,
+				960A94C4F3A4BA9ACC22061C45B180CC /* SlideMenuControllerSwift.modulemap */,
+				E9759DBA657AE4E2244D5F248A24D2A2 /* SlideMenuControllerSwift.xcconfig */,
+				3189E7211F87E4CDEC1F187E2C9EAA34 /* SlideMenuControllerSwift-dummy.m */,
+				C182C41935C364C3E1E0E068BCDD1DB5 /* SlideMenuControllerSwift-prefix.pch */,
+				1D23E688294F5FB2E11039F4026B6D24 /* SlideMenuControllerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SlideMenuControllerSwift";
+			sourceTree = "<group>";
+		};
+		4033A193A460FCB358B72AD0EB9543F4 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				C0ADFE748CCD651032014826E41A37FA /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		4570A2A61B025B6EB1BD4464D6BE144D /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				C484AD3D2DB329CCFAA24DFE40376412 /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		4EBE7EBFC2AFE0D1C883E924B392CD2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED4828D4B176434DE26794751870258E /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		533F70BEA87CB88FEF90AEBCEC8B60BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				536B330D4B2B0377ED54DD8699A8E590 /* libCardIO.a */,
+				BB5958FF5C33EC6CD522FFFF1D672056 /* libopencv_core.a */,
+				F6AF5AC7A0578505E5062A24E507DDBF /* libopencv_imgproc.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7435BDC1C43292F2258729E819C8668B /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				4EBE7EBFC2AFE0D1C883E924B392CD2A /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		788B3FDE7D184CC3DCB5C34C3A7989BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B50E84786F59C5385CB3456F5E76620 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F825C95D719CF1B56B65CE267DE8316B /* Pods */,
+				F67B462786A8EF381308D2638B32DB8C /* Products */,
+				AED97E98CED797E759F3B6D2C78C0AF2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8417B140364373FE0E0EDEFC03F87FF9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				140A04154DBE223DAC0802D51CCB9B2B /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		A4B81FAD3B985C6EF2D0CC2E6BDE36F4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA06913DD18BDDE7B53220C5862C4D0B /* GoogleToolboxForMac.modulemap */,
+				EA204748FCC3641DE5EAC190399DA0BC /* GoogleToolboxForMac.xcconfig */,
+				8C40940BF0000F815AAC919204B56577 /* GoogleToolboxForMac-dummy.m */,
+				92265E8477503205652E62EAD057000A /* GoogleToolboxForMac-prefix.pch */,
+				D944FB7E386A81BAE42E3CAB885A07C2 /* GoogleToolboxForMac-umbrella.h */,
+				31246794DF8EB45019EBC970B8008BCB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		AE5AD44E73CBF6C6198C40AE0938FC65 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				788B3FDE7D184CC3DCB5C34C3A7989BC /* Frameworks */,
+			);
+			name = FirebaseDatabase;
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		AED97E98CED797E759F3B6D2C78C0AF2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC3780C464FA62F24DC521CD04BA1ACB /* Pods-Pay4All */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0ADFE748CCD651032014826E41A37FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67837ACA2E63C1AC5046B88AAE5ACAF2 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDF84C83FE7BADB178A554CDE0006B59 /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				BBFABB6BD182E11F5BD0C5A59AE3B88B /* GTMNSData+zlib.h */,
+				98C13E4FEBFBA2E4F97A08DFD86D35B9 /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		D5CA02FDE2350D9CB43B446B8A745049 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				8417B140364373FE0E0EDEFC03F87FF9 /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		E07F81B6B5777B9DCE7FA59984F92E24 /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				307F74C13AF9E147820976313C846E39 /* CardIO.h */,
+				80C0CBD23D72FD32BD06C6E79667EAE7 /* CardIOCreditCardInfo.h */,
+				A0AF7CEF27A1B20BD60955BA7D75EA95 /* CardIODetectionMode.h */,
+				9133DB2AA196ECFA7EA9361CC99146A7 /* CardIOPaymentViewController.h */,
+				73B880481DD32EA15A96EFB946495DD9 /* CardIOPaymentViewControllerDelegate.h */,
+				6780D85C5AF9B94BB9641229BB7AD94A /* CardIOUtilities.h */,
+				6252E624C0470DB532297CC1C6C418D2 /* CardIOView.h */,
+				C141CB56DF6362172E664F5CAB18B0B1 /* CardIOViewDelegate.h */,
+				533F70BEA87CB88FEF90AEBCEC8B60BF /* Frameworks */,
+			);
+			name = CardIO;
+			path = CardIO;
+			sourceTree = "<group>";
+		};
+		EC3780C464FA62F24DC521CD04BA1ACB /* Pods-Pay4All */ = {
+			isa = PBXGroup;
+			children = (
+				726950EAA5920995FEC349C55BC9869D /* Info.plist */,
+				F44E86C86048AA288941090CC0E306C4 /* Pods-Pay4All.modulemap */,
+				B30566FB769A4AC428B52AD9F790795A /* Pods-Pay4All-acknowledgements.markdown */,
+				FAECEA3E1197B0DE000031FF5ED9B115 /* Pods-Pay4All-acknowledgements.plist */,
+				991BC368B377177D85159A70164D12B5 /* Pods-Pay4All-dummy.m */,
+				720985E196D2AD397747C014D677137C /* Pods-Pay4All-frameworks.sh */,
+				39ADA47E6D6B3E3D7E7D879DC6D3E7A8 /* Pods-Pay4All-resources.sh */,
+				4E0EBC26B03DCF79027546B0DE70B1EC /* Pods-Pay4All-umbrella.h */,
+				002FFA9B44389A302B88A3EF01566DA7 /* Pods-Pay4All.debug.xcconfig */,
+				6ABBFC626E50E672820DAF1C2B420188 /* Pods-Pay4All.release.xcconfig */,
+			);
+			name = "Pods-Pay4All";
+			path = "Target Support Files/Pods-Pay4All";
+			sourceTree = "<group>";
+		};
+		EF2A6ED1EF5A9BCB6CA8944EFC64D532 /* SlideMenuControllerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				1FD81AA9C6DC8AC90A0ED6DD52E7E4E4 /* SlideMenuController.swift */,
+				351EFA1CB6737A9D3D5FAB6BE141019E /* Support Files */,
+			);
+			name = SlideMenuControllerSwift;
+			path = SlideMenuControllerSwift;
+			sourceTree = "<group>";
+		};
+		F67B462786A8EF381308D2638B32DB8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D12794A4D240E3640403F644F429F13B /* GoogleToolboxForMac.framework */,
+				B70479C47C402E195EFCCFFD33D58F23 /* Pods_Pay4All.framework */,
+				1BF43F8072B95AA93F2DE0C59CD289B7 /* SlideMenuControllerSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F825C95D719CF1B56B65CE267DE8316B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E07F81B6B5777B9DCE7FA59984F92E24 /* CardIO */,
+				D5CA02FDE2350D9CB43B446B8A745049 /* Firebase */,
+				4033A193A460FCB358B72AD0EB9543F4 /* FirebaseAnalytics */,
+				100DE586E9494E27F9FF1272B63A1464 /* FirebaseCore */,
+				AE5AD44E73CBF6C6198C40AE0938FC65 /* FirebaseDatabase */,
+				7435BDC1C43292F2258729E819C8668B /* FirebaseInstanceID */,
+				03D1579A8A6A966D59BFB09A6018195F /* GoogleToolboxForMac */,
+				EF2A6ED1EF5A9BCB6CA8944EFC64D532 /* SlideMenuControllerSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA11742F70663BAF06508267E71074A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE34E3BC2A25B7C2F4E209D992676DD8 /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		91AC378E887348DB73DE22853B3E3587 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3000E312F7856DD8A4E6EE4C39A2F13 /* Pods-Pay4All-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F251C5FE7ABA82CE278BEF712669F8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EF09C1B60869A9014C4EAE2A73B9E3 /* SlideMenuControllerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */,
+				541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */,
+				DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
+			buildPhases = (
+				63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */,
+				F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */,
+				FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = D12794A4D240E3640403F644F429F13B /* GoogleToolboxForMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		15A470DA377BB2EC194AF84296BCA747 /* SlideMenuControllerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D070FAB253E5ED9E500CE0FCED966FEF /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */;
+			buildPhases = (
+				752271B39EEF137704444746E6C1B01B /* Sources */,
+				A5F0387BCE5EB93E456A8C9CE5958B6F /* Frameworks */,
+				9F251C5FE7ABA82CE278BEF712669F8D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideMenuControllerSwift;
+			productName = SlideMenuControllerSwift;
+			productReference = 1BF43F8072B95AA93F2DE0C59CD289B7 /* SlideMenuControllerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E059BBA121A56753BC7244E5E73BFCEB /* Pods-Pay4All */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD914674051D3C569A65081473A006D5 /* Build configuration list for PBXNativeTarget "Pods-Pay4All" */;
+			buildPhases = (
+				41BA53491DFB68BB66A55C862C553D4A /* Sources */,
+				1323C9754226485C3D3863FE6B9A4D29 /* Frameworks */,
+				91AC378E887348DB73DE22853B3E3587 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				249E7EC2B1D474E4A8397167C31D8585 /* PBXTargetDependency */,
+				EC934BCAC16AA74DE31985144D498DD1 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pay4All";
+			productName = "Pods-Pay4All";
+			productReference = B70479C47C402E195EFCCFFD33D58F23 /* Pods_Pay4All.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F67B462786A8EF381308D2638B32DB8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
+				E059BBA121A56753BC7244E5E73BFCEB /* Pods-Pay4All */,
+				15A470DA377BB2EC194AF84296BCA747 /* SlideMenuControllerSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41BA53491DFB68BB66A55C862C553D4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB70A0450889399D7CF29AB2893BC0B /* Pods-Pay4All-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */,
+				F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752271B39EEF137704444746E6C1B01B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60CDA1672BE8EF806044F82533F78F4A /* SlideMenuController.swift in Sources */,
+				D976473B07CDBEA330F63BA6EB77CAC0 /* SlideMenuControllerSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		249E7EC2B1D474E4A8397167C31D8585 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
+			targetProxy = 24C27B0FC3E83DC552510538EEB29D5D /* PBXContainerItemProxy */;
+		};
+		EC934BCAC16AA74DE31985144D498DD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlideMenuControllerSwift;
+			target = 15A470DA377BB2EC194AF84296BCA747 /* SlideMenuControllerSwift */;
+			targetProxy = A5F4DFF6BDD1B116525C91D7AFF7C04A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19FAB80E8DD3BD6FFACE31C1CD5AF8A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9759DBA657AE4E2244D5F248A24D2A2 /* SlideMenuControllerSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SlideMenuControllerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3EDF744EE23CB09E804CCA1B76AD8BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ABBFC626E50E672820DAF1C2B420188 /* Pods-Pay4All.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pay4All/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pay4All/Pods-Pay4All.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pay4All;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67F2684F3CB69F5C60EB4BC9FF518F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9759DBA657AE4E2244D5F248A24D2A2 /* SlideMenuControllerSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SlideMenuControllerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AFA7DF3D3F0F15D50D07B71049DDEEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 002FFA9B44389A302B88A3EF01566DA7 /* Pods-Pay4All.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pay4All/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pay4All/Pods-Pay4All.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pay4All;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D60CD877A708870E2BE96B83BA32F883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA204748FCC3641DE5EAC190399DA0BC /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F066921CBDBDB5F45795E50FBC5AC972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA204748FCC3641DE5EAC190399DA0BC /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60CD877A708870E2BE96B83BA32F883 /* Debug */,
+				F066921CBDBDB5F45795E50FBC5AC972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D070FAB253E5ED9E500CE0FCED966FEF /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FAB80E8DD3BD6FFACE31C1CD5AF8A2 /* Debug */,
+				67F2684F3CB69F5C60EB4BC9FF518F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD914674051D3C569A65081473A006D5 /* Build configuration list for PBXNativeTarget "Pods-Pay4All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA7DF3D3F0F15D50D07B71049DDEEEC /* Debug */,
+				3EDF744EE23CB09E804CCA1B76AD8BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
