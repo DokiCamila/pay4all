@@ -92,4 +92,10 @@ class GenerateQRCode: UIViewController, CLLocationManagerDelegate {
         let image:UIImage = UIImage.init(cgImage: cgImage)
         return image
     }
+    
+    @IBAction func voltarPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
 }

@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoFinalInv" translatesAutoresizingMaskIntoConstraints="NO" id="a02-hE-mTT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoFinalInvSFpng" translatesAutoresizingMaskIntoConstraints="NO" id="a02-hE-mTT">
                                 <rect key="frame" x="20" y="20" width="335" height="627"/>
                             </imageView>
                         </subviews>
@@ -42,6 +42,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logoFinalInv" width="1727" height="2006"/>
+        <image name="logoFinalInvSFpng" width="1727" height="2006"/>
     </resources>
 </document>

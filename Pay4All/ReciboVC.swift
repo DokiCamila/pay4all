@@ -27,7 +27,7 @@ class ReciboVC: UIViewController {
 
         let date = Date(timeIntervalSince1970: data!)
         let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = TimeZone(abbreviation: "GMT") //Set timezone that you want
+        dateFormatter.timeZone = TimeZone(abbreviation: "GMT-3") //Set timezone that you want
         dateFormatter.locale = NSLocale.current
         dateFormatter.dateFormat = "dd/MMyyyy HH:mm" //Specify your format that you want
         let strDate = dateFormatter.string(from: date)

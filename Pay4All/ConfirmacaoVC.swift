@@ -137,7 +137,7 @@ class ConfirmacaoVC: UIViewController, CLLocationManagerDelegate, UIPickerViewDa
 
         
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "ReciboVC") as! ReciboVC
-        controller.valor = self.valor
+        controller.valor = self.valorLbl.text
         controller.data = data
         controller.id = ID
         controller.carteira = carteiraField.text

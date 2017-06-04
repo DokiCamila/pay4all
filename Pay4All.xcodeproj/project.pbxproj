@@ -15,6 +15,7 @@
 		BC95D55E1EE3EB8D00692B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC95D55D1EE3EB8D00692B42 /* Assets.xcassets */; };
 		BC95D5601EE3F11A00692B42 /* ReciboVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95D55F1EE3F11A00692B42 /* ReciboVC.swift */; };
 		BC95D5621EE3FC9B00692B42 /* Transacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95D5611EE3FC9B00692B42 /* Transacao.swift */; };
+		BC95D5641EE4195B00692B42 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95D5631EE4195B00692B42 /* FancyButton.swift */; };
 		BC9793D21EE3ACCE0070C31C /* CellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9793D11EE3ACCE0070C31C /* CellVC.swift */; };
 		BC9793D41EE3BC3B0070C31C /* ConfirmacaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9793D31EE3BC3B0070C31C /* ConfirmacaoVC.swift */; };
 		BC9793D61EE3CA630070C31C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9793D51EE3CA630070C31C /* Location.swift */; };
@@ -43,6 +44,7 @@
 		BC95D55D1EE3EB8D00692B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC95D55F1EE3F11A00692B42 /* ReciboVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReciboVC.swift; sourceTree = "<group>"; };
 		BC95D5611EE3FC9B00692B42 /* Transacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transacao.swift; sourceTree = "<group>"; };
+		BC95D5631EE4195B00692B42 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		BC9793D11EE3ACCE0070C31C /* CellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellVC.swift; sourceTree = "<group>"; };
 		BC9793D31EE3BC3B0070C31C /* ConfirmacaoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacaoVC.swift; sourceTree = "<group>"; };
 		BC9793D51EE3CA630070C31C /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				BCFFB5791EE382E80034EFFC /* ListarCarteira.swift */,
 				BC9793D31EE3BC3B0070C31C /* ConfirmacaoVC.swift */,
 				BC95D55F1EE3F11A00692B42 /* ReciboVC.swift */,
+				BC95D5631EE4195B00692B42 /* FancyButton.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				BCFFB57A1EE382E80034EFFC /* ListarCarteira.swift in Sources */,
 				BCC896961EE326F200DDFDE3 /* GenerateQRCode.swift in Sources */,
 				BC95D5621EE3FC9B00692B42 /* Transacao.swift in Sources */,
+				BC95D5641EE4195B00692B42 /* FancyButton.swift in Sources */,
 				BC2317511EE3939B009FBD57 /* PostCarteira.swift in Sources */,
 				BC9793D81EE3D6D60070C31C /* Contrato.swift in Sources */,
 				BC3EB71B1EE3071900B7E30F /* LeituraQRCodeVC.swift in Sources */,

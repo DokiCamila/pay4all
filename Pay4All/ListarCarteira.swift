@@ -21,6 +21,11 @@ class ListarCarteira: UIViewController, UITableViewDelegate, UITableViewDataSour
         exit(0)
     }
     
+    @IBAction func geraQRPressed(_ sender: Any) {
+        performSegue(withIdentifier: "GeraQRSegue", sender: nil)
+    }
+    
+
     var postcarteira = [PostCarteira]()
     
     override func viewDidLoad() {

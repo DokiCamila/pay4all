@@ -24,5 +24,8 @@ class MainVC: UIViewController {
         exit(0)
     }
 
+    @IBAction func geraQRPressed(_ sender: Any) {
+        performSegue(withIdentifier: "GeraQRSegue", sender: nil)
+    }
 }
 
