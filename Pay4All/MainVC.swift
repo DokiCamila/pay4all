@@ -20,6 +20,9 @@ class MainVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func exitPressed(_ sender: Any) {
+        exit(0)
+    }
 
 }
 

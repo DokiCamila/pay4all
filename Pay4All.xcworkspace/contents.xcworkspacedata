@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CellVCTableViewCell.swift">
-   </FileRef>
-   <FileRef
       location = "group:Pay4All.xcodeproj">
    </FileRef>
    <FileRef

@@ -13,6 +13,14 @@ class ListarCarteira: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func voltarPressed(_ sender: UIButton) {
+         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func exitPressed(_ sender: Any) {
+        exit(0)
+    }
+    
     var postcarteira = [PostCarteira]()
     
     override func viewDidLoad() {

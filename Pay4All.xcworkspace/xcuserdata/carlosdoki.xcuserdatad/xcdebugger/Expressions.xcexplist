@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "GenerateQRCode.displayQRcode(UIButton) -&gt; ():GenerateQRCode.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Location.sharedInstance.latitude">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "LeituraCartaoVC.userDidProvide(CardIOCreditCardInfo!, in : CardIOPaymentViewController!) -&gt; ():LeituraCartaoVC.swift">
          <PersistentStrings>
             <PersistentString
@@ -17,10 +25,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "GenerateQRCode.displayQRcode(UIButton) -&gt; ():GenerateQRCode.swift">
+         contextName = "ReciboVC.viewDidLoad() -&gt; ():ReciboVC.swift">
          <PersistentStrings>
             <PersistentString
-               value = "Location.sharedInstance.latitude">
+               value = "data">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
