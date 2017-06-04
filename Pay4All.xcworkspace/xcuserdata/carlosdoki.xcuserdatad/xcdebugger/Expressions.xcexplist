@@ -3,14 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "LeituraCartaoVC.(salvarPressed(UIButton) -&gt; ()).(closure #1):LeituraCartaoVC.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "(responseJSON[&quot;data&quot;] as NSDictionary)[&quot;address&quot;] as String">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "LeituraCartaoVC.userDidProvide(CardIOCreditCardInfo!, in : CardIOPaymentViewController!) -&gt; ():LeituraCartaoVC.swift">
          <PersistentStrings>
             <PersistentString
@@ -21,6 +13,22 @@
             </PersistentString>
             <PersistentString
                value = "String(info.expiryMonth)+String( info.expiryYear)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GenerateQRCode.displayQRcode(UIButton) -&gt; ():GenerateQRCode.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Location.sharedInstance.latitude">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LeituraCartaoVC.(salvarPressed(UIButton) -&gt; ()).(closure #1):LeituraCartaoVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(responseJSON[&quot;data&quot;] as NSDictionary)[&quot;address&quot;] as String">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

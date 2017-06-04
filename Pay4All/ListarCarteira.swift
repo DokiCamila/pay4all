@@ -7,29 +7,52 @@
 //
 
 import UIKit
+import Firebase
 
-class ListarCarteira: UIViewController {
+class ListarCarteira: UIViewController, UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var postcarteira = [PostCarteira]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        DataService.ds.REF_CARTEIRA.observe(.value, with: { (snapshot) in
+            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                for snap in snapshot {
+                    print("DOKI: \(snap)")
+                    if let postDict = snap.value as? Dictionary<String, AnyObject> {
+                        let key = snap.key
+                        let post = PostCarteira(postKey: key, postData: postDict)
+                        self.postcarteira.append(post)
+                    }
+                }
+            }
+            self.tableView.reloadData()
+        })
+        
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return postcarteira.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let post = postcarteira[indexPath.row]
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? CellVC {
+            cell.configureCell(nome: post.nome, tipo: post.tipo)
+            return cell
+        } else {
+            return CellVC()
+        }
+    }
 }

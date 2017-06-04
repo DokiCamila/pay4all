@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import CoreLocation
 
-class GenerateQRCode: UIViewController {
+class GenerateQRCode: UIViewController, CLLocationManagerDelegate {
+    
     var qrcodeImage: CIImage!
+    let locationManger = CLLocationManager()
+    
     
     @IBOutlet weak var qrtext: UITextField!
     @IBOutlet weak var imaQRCode: UIImageView!
@@ -18,12 +22,31 @@ class GenerateQRCode: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        locationManger.delegate = self
+        locationManger.desiredAccuracy = kCLLocationAccuracyBest
+        locationManger.requestWhenInUseAuthorization()
+        locationManger.startMonitoringSignificantLocationChanges()
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        locationAuthStatus()
+    }
+    
+    func locationAuthStatus() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            //            currentLocation = locationManger.location
+            //            Location.sharedInstance.latitude = currentLocation.coordinate.latitude
+            //            Location.sharedInstance.longitude = currentLocation.coordinate.longitude
+            Location.sharedInstance.latitude = locationManger.location?.coordinate.latitude
+            Location.sharedInstance.longitude = locationManger.location?.coordinate.longitude
+
+            
+        } else {
+            locationManger.requestWhenInUseAuthorization()
+            locationAuthStatus()
+        }
     }
     
     @IBAction func displayQRcode(_ sender: UIButton) {
@@ -32,7 +55,17 @@ class GenerateQRCode: UIViewController {
                 return
             }
             
-            let data = qrtext.text!.data(using: String.Encoding.isoLatin1, allowLossyConversion: false)
+            let strIDFV = UIDevice.current.identifierForVendor?.uuidString
+            
+            print("Vendor = \(strIDFV!)")
+            let contrato = "1"
+            let vendedor = "1343wewqwqe"
+            //contrato
+            //vendedor
+            
+            
+            let textocompleto = qrtext.text! + ";lat=\(Location.sharedInstance.latitude!);lon=\(Location.sharedInstance.longitude!);IDFV=\(strIDFV);contrato=\(contrato);vendedor=\(vendedor)"
+            let data = textocompleto.data(using: String.Encoding.isoLatin1, allowLossyConversion: false)
             
             let filter = CIFilter(name: "CIQRCodeGenerator")
             filter!.setValue(data, forKey: "inputMessage")

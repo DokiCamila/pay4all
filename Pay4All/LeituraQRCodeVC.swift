@@ -29,6 +29,8 @@ class LeituraQRCodeVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate 
                               AVMetadataObjectTypePDF417Code,
                               AVMetadataObjectTypeQRCode]
     
+    var textoQRCode : String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -107,10 +109,31 @@ class LeituraQRCodeVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate 
             qrCodeFrameView?.frame = barCodeObject!.bounds
             
             if metadataObj.stringValue != nil {
-                messageLabel.text = metadataObj.stringValue
+//                messageLabel.text = metadataObj.stringValue
+                //let secondViewController:ConfirmacaoVC = ConfirmacaoVC()
+                //secondViewController.valor; = metadataObj.stringValue
+                textoQRCode = metadataObj.stringValue
+                
+                //let confirmacaoVC = ConfirmacaoVC()
+                //confirmacaoVC.valor = metadataObj.stringValue
+                //navigationController?.pushViewController(confirmacaoVC, animated: true)
+                
+                //self.performSegue(withIdentifier: "ConfirmacaoVC", sender: nil)
+                let controller = self.storyboard?.instantiateViewController(withIdentifier: "ConfirmacaoVC") as! ConfirmacaoVC
+                controller.valor = metadataObj.stringValue
+                self.present(controller, animated: true, completion: nil)
+            
             }
         }
     }
+    
+
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "ConfirmacaoVC" {
+//            let dvc = segue.destination as! ConfirmacaoVC
+//            dvc.valor = self.textoQRCode
+//        }
+//    }
 
 
 }

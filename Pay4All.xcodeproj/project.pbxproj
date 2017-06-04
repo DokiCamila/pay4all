@@ -12,6 +12,10 @@
 		BC7183901EE3345300758BAB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71838F1EE3345300758BAB /* DataService.swift */; };
 		BC7183921EE338E300758BAB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7183911EE338E300758BAB /* Constants.swift */; };
 		BC7183941EE339C400758BAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC7183931EE339C400758BAB /* GoogleService-Info.plist */; };
+		BC9793D21EE3ACCE0070C31C /* CellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9793D11EE3ACCE0070C31C /* CellVC.swift */; };
+		BC9793D41EE3BC3B0070C31C /* ConfirmacaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9793D31EE3BC3B0070C31C /* ConfirmacaoVC.swift */; };
+		BC9793D61EE3CA630070C31C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9793D51EE3CA630070C31C /* Location.swift */; };
+		BC9793D81EE3D6D60070C31C /* Contrato.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9793D71EE3D6D60070C31C /* Contrato.swift */; };
 		BCC8968B1EE311AF00DDFDE3 /* LeituraCartaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8968A1EE311AF00DDFDE3 /* LeituraCartaoVC.swift */; };
 		BCC896961EE326F200DDFDE3 /* GenerateQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC896951EE326F200DDFDE3 /* GenerateQRCode.swift */; };
 		BCF56DFA1EE1CB6D0048556F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF56DF91EE1CB6D0048556F /* AppDelegate.swift */; };
@@ -34,6 +38,10 @@
 		BC71838F1EE3345300758BAB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		BC7183911EE338E300758BAB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BC7183931EE339C400758BAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC9793D11EE3ACCE0070C31C /* CellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellVC.swift; sourceTree = "<group>"; };
+		BC9793D31EE3BC3B0070C31C /* ConfirmacaoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacaoVC.swift; sourceTree = "<group>"; };
+		BC9793D51EE3CA630070C31C /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		BC9793D71EE3D6D60070C31C /* Contrato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contrato.swift; sourceTree = "<group>"; };
 		BCC8968A1EE311AF00DDFDE3 /* LeituraCartaoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeituraCartaoVC.swift; sourceTree = "<group>"; };
 		BCC896911EE31FFE00DDFDE3 /* Pay4All-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pay4All-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCC896951EE326F200DDFDE3 /* GenerateQRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateQRCode.swift; sourceTree = "<group>"; };
@@ -73,6 +81,7 @@
 		BC3EB71E1EE3099500B7E30F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BC9793D11EE3ACCE0070C31C /* CellVC.swift */,
 				BC3EB71A1EE3071900B7E30F /* LeituraQRCodeVC.swift */,
 				BCF56DFB1EE1CB6D0048556F /* MainVC.swift */,
 				BCC8968A1EE311AF00DDFDE3 /* LeituraCartaoVC.swift */,
@@ -80,6 +89,7 @@
 				BCFFB5701EE33C290034EFFC /* LoginVC.swift */,
 				BCFFB5721EE341E10034EFFC /* CadastroUsuarioVC.swift */,
 				BCFFB5791EE382E80034EFFC /* ListarCarteira.swift */,
+				BC9793D31EE3BC3B0070C31C /* ConfirmacaoVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -89,6 +99,7 @@
 			children = (
 				BCFFB5761EE3563E0034EFFC /* PostUser.swift */,
 				BC2317501EE3939B009FBD57 /* PostCarteira.swift */,
+				BC9793D71EE3D6D60070C31C /* Contrato.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -105,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7183911EE338E300758BAB /* Constants.swift */,
+				BC9793D51EE3CA630070C31C /* Location.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -292,9 +304,13 @@
 				BCFFB57A1EE382E80034EFFC /* ListarCarteira.swift in Sources */,
 				BCC896961EE326F200DDFDE3 /* GenerateQRCode.swift in Sources */,
 				BC2317511EE3939B009FBD57 /* PostCarteira.swift in Sources */,
+				BC9793D81EE3D6D60070C31C /* Contrato.swift in Sources */,
 				BC3EB71B1EE3071900B7E30F /* LeituraQRCodeVC.swift in Sources */,
 				BCFFB5711EE33C290034EFFC /* LoginVC.swift in Sources */,
+				BC9793D21EE3ACCE0070C31C /* CellVC.swift in Sources */,
 				BCC8968B1EE311AF00DDFDE3 /* LeituraCartaoVC.swift in Sources */,
+				BC9793D61EE3CA630070C31C /* Location.swift in Sources */,
+				BC9793D41EE3BC3B0070C31C /* ConfirmacaoVC.swift in Sources */,
 				BC7183901EE3345300758BAB /* DataService.swift in Sources */,
 				BC7183921EE338E300758BAB /* Constants.swift in Sources */,
 				BCF56DFC1EE1CB6D0048556F /* MainVC.swift in Sources */,

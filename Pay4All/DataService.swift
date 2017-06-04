@@ -20,6 +20,7 @@ class DataService {
     private var _REF_BASE = DB_BASE
     private var _REF_CARTEIRA = DB_BASE.child("carteira")
     private var _REF_USERS = DB_BASE.child("users")
+    private var _REF_CONTRATO = DB_BASE.child("contrato")
     
     // Storage References
     private var _REF_POST_IMAGES=STORAGE_BASE.child("post-pics")
@@ -35,6 +36,10 @@ class DataService {
     
     var REF_USERS: FIRDatabaseReference {
         return _REF_USERS
+    }
+    
+    var REF_CONTRATO: FIRDatabaseReference {
+        return _REF_CONTRATO
     }
     
     var REF_POST_IMAGES: FIRStorageReference {

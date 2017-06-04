@@ -13,6 +13,9 @@ class LeituraCartaoVC: UIViewController, CardIOPaymentViewControllerDelegate, UI
     
     //@IBOutlet weak var resultLabel: UILabel!
     var pickOption = ["ApplePay", "PayPal", "Skrill", "Mastercard", "BB", "BitCoin", "Cartão Debito", "Cartão Crédito"]
+    //usuario/senha ("ApplePay", "PayPal", "Skrill", "Mastercard", "BB", "BitCoin")
+    //Captura Cartão.
+    
     var postcarteira = [PostCarteira]()
     var ID = ""
     
@@ -21,9 +24,19 @@ class LeituraCartaoVC: UIViewController, CardIOPaymentViewControllerDelegate, UI
     @IBOutlet weak var vencField: UITextField!
     @IBOutlet weak var cvvField: UITextField!
     @IBOutlet weak var nomeCarteiraField: UITextField!
+    @IBOutlet weak var capturaBtn: UIButton!
+    @IBOutlet weak var usuarioField: UITextField!
+    @IBOutlet weak var senhaField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        capturaBtn.isHidden = true
+        usuarioField.isHidden = true
+        senhaField.isHidden = true
+        numberField.isHidden = true
+        cvvField.isHidden = true
+        vencField.isHidden = true
         
         let randomNum:UInt32 = arc4random_uniform(10000) // range is 0 to 99999
         
@@ -55,6 +68,25 @@ class LeituraCartaoVC: UIViewController, CardIOPaymentViewControllerDelegate, UI
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if (pickOption[row] == "Cartão Debito" || pickOption[row] == "Cartão Crédito") {
+            capturaBtn.isHidden = false
+            usuarioField.isHidden = true
+            if (pickOption[row] != "BitCoin") {
+                senhaField.isHidden = true
+            }
+            
+            numberField.isHidden = false
+            cvvField.isHidden = false
+            vencField.isHidden = false
+        } else {
+            
+            capturaBtn.isHidden = true
+            usuarioField.isHidden = false
+            senhaField.isHidden = false
+            numberField.isHidden = true
+            cvvField.isHidden = true
+            vencField.isHidden = true
+        }
         pickerTextField.text = pickOption[row]
     }
     
@@ -80,16 +112,16 @@ class LeituraCartaoVC: UIViewController, CardIOPaymentViewControllerDelegate, UI
         
         Alamofire.request(url!)
             .responseJSON {  response in
-                print(response)
+                //print(response)
                 //to get status code
-                if let status = response.response?.statusCode {
-                    switch(status){
-                    case 201:
-                        print("example success")
-                    default:
-                        print("error with response status: \(status)")
-                    }
-                }
+                //                if let status = response.response?.statusCode {
+                //                    switch(status){
+                //                    case 201:
+                //                       // print("example success")
+                //                    default:
+                //                        //print("error with response status: \(status)")
+                //                    }
+                //                }
                 let responseJSON = response.result.value as? [String: Any]
                 let results = responseJSON?["data"] as? NSDictionary
                 let address = results?["address"] as! String
@@ -98,11 +130,12 @@ class LeituraCartaoVC: UIViewController, CardIOPaymentViewControllerDelegate, UI
                     "id": self.ID as AnyObject,
                     "idUser": userUUID as AnyObject,
                     "nome": self.nomeCarteiraField.text as AnyObject,
+                    "tipo": self.pickerTextField.text as AnyObject,
                     "hashBlockChain": address as AnyObject
                 ]
                 let firebasePost = DataService.ds.REF_CARTEIRA.childByAutoId()
                 firebasePost.setValue(postcarteira)
-                let alertController = UIAlertController(title: "Informação", message: "Carteira cadastrada com sucesso!", preferredStyle: .invitation)
+                let alertController = UIAlertController(title: "Informação", message: "Carteira cadastrada com sucesso!", preferredStyle: .alert)
                 //We add buttons to the alert controller by creating UIAlertActions:
                 let actionOk = UIAlertAction(title: "OK",
                                              style: .default,
@@ -114,6 +147,9 @@ class LeituraCartaoVC: UIViewController, CardIOPaymentViewControllerDelegate, UI
         }
     }
     
+    @IBAction func voltarPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     
     func userDidProvide(_ cardInfo: CardIOCreditCardInfo!, in paymentViewController: CardIOPaymentViewController!) {

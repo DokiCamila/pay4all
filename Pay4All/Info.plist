@@ -43,5 +43,7 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>Precisamos do acesso a sua camera para o Pay4All.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Precisamos do acesso a sua localização para garantir a transação do Pay4All.</string>
 </dict>
 </plist>
