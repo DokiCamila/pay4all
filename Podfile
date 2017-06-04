@@ -8,6 +8,12 @@ target 'Pay4All' do
   # Pods for Pay4All
   pod 'Firebase'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
   pod 'SlideMenuControllerSwift'
   pod 'CardIO'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'FBSDKLoginKit'
+  pod 'SwiftKeychainWrapper'
+  pod 'Alamofire'
 end

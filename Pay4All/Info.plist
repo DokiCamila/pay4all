@@ -42,6 +42,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-	<string>Precisamos do acesso a sua camera para escanear o QRCode.</string>
+	<string>Precisamos do acesso a sua camera para o Pay4All.</string>
 </dict>
 </plist>

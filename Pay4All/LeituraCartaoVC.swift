@@ -7,39 +7,122 @@
 //
 
 import UIKit
+import Alamofire
 
-class LeituraCartaoVC: UIViewController, CardIOPaymentViewControllerDelegate {
-
-    @IBOutlet weak var resultLabel: UILabel!
+class LeituraCartaoVC: UIViewController, CardIOPaymentViewControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    //@IBOutlet weak var resultLabel: UILabel!
+    var pickOption = ["ApplePay", "PayPal", "Skrill", "Mastercard", "BB", "BitCoin", "Cartão Debito", "Cartão Crédito"]
+    var postcarteira = [PostCarteira]()
+    var ID = ""
+    
+    @IBOutlet weak var pickerTextField: UITextField!
+    @IBOutlet weak var numberField: UITextField!
+    @IBOutlet weak var vencField: UITextField!
+    @IBOutlet weak var cvvField: UITextField!
+    @IBOutlet weak var nomeCarteiraField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let randomNum:UInt32 = arc4random_uniform(10000) // range is 0 to 99999
+        
+        // convert the UInt32 to some other  types
+        
+        ID = String(format: "%05d", randomNum) //string works too
+        ID = ID + String(round(Date().timeIntervalSince1970))
+        
         // Do any additional setup after loading the view.
-         CardIOUtilities.preload()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let pickerView = UIPickerView()
+        
+        pickerView.delegate = self
+        
+        pickerTextField.inputView = pickerView
+        
+        CardIOUtilities.preload()
     }
     
-    @IBAction func scanCard(_ sender: UIButton) {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickOption.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickOption[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        pickerTextField.text = pickOption[row]
+    }
+    
+    @IBAction func CriarCarteiraPressed(_ sender: Any) {
         let cardIOVC = CardIOPaymentViewController(paymentDelegate: self)
         cardIOVC?.modalPresentationStyle = .formSheet
         present(cardIOVC!, animated: true, completion: nil)
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     func userDidCancel(_ paymentViewController: CardIOPaymentViewController!) {
-        resultLabel.text = "user canceled"
+        //resultLabel.text = "user canceled"
         paymentViewController?.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func salvarPressed(_ sender: UIButton) {
+        let blockchain = NSString(format : "https://block.io/api/v2/get_new_address/?api_key=95d2-c52b-195c-98a9&label=%@", userUUID + ID)
+        let url = URL(string: blockchain as String)
+        
+        Alamofire.request(url!)
+            .responseJSON {  response in
+                print(response)
+                //to get status code
+                if let status = response.response?.statusCode {
+                    switch(status){
+                    case 201:
+                        print("example success")
+                    default:
+                        print("error with response status: \(status)")
+                    }
+                }
+                let responseJSON = response.result.value as? [String: Any]
+                let results = responseJSON?["data"] as? NSDictionary
+                let address = results?["address"] as! String
+                
+                let postcarteira : Dictionary<String, AnyObject> = [
+                    "id": self.ID as AnyObject,
+                    "idUser": userUUID as AnyObject,
+                    "nome": self.nomeCarteiraField.text as AnyObject,
+                    "hashBlockChain": address as AnyObject
+                ]
+                let firebasePost = DataService.ds.REF_CARTEIRA.childByAutoId()
+                firebasePost.setValue(postcarteira)
+                let alertController = UIAlertController(title: "Informação", message: "Carteira cadastrada com sucesso!", preferredStyle: .invitation)
+                //We add buttons to the alert controller by creating UIAlertActions:
+                let actionOk = UIAlertAction(title: "OK",
+                                             style: .default,
+                                             handler: nil) //You can use a block here to handle a press on this button
+                
+                alertController.addAction(actionOk)
+                
+                self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    
+    
     func userDidProvide(_ cardInfo: CardIOCreditCardInfo!, in paymentViewController: CardIOPaymentViewController!) {
         if let info = cardInfo {
-            let str = NSString(format: "Received card info.\n Number: %@\n expiry: %02lu/%lu\n cvv: %@.", info.redactedCardNumber, info.expiryMonth, info.expiryYear, info.cvv)
-            resultLabel.text = str as String
+            numberField.text = info.redactedCardNumber
+            vencField.text = String(info.expiryMonth)+"/"+String( info.expiryYear)
+            cvvField.text = info.cvv
+            
+            paymentViewController?.dismiss(animated: true, completion: nil)
         }
-        paymentViewController?.dismiss(animated: true, completion: nil)
-    }  
+    }
 }

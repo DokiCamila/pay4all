@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC2317511EE3939B009FBD57 /* PostCarteira.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2317501EE3939B009FBD57 /* PostCarteira.swift */; };
 		BC3EB71B1EE3071900B7E30F /* LeituraQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3EB71A1EE3071900B7E30F /* LeituraQRCodeVC.swift */; };
+		BC7183901EE3345300758BAB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71838F1EE3345300758BAB /* DataService.swift */; };
+		BC7183921EE338E300758BAB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7183911EE338E300758BAB /* Constants.swift */; };
+		BC7183941EE339C400758BAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC7183931EE339C400758BAB /* GoogleService-Info.plist */; };
 		BCC8968B1EE311AF00DDFDE3 /* LeituraCartaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8968A1EE311AF00DDFDE3 /* LeituraCartaoVC.swift */; };
 		BCC896961EE326F200DDFDE3 /* GenerateQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC896951EE326F200DDFDE3 /* GenerateQRCode.swift */; };
 		BCF56DFA1EE1CB6D0048556F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF56DF91EE1CB6D0048556F /* AppDelegate.swift */; };
 		BCF56DFC1EE1CB6D0048556F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF56DFB1EE1CB6D0048556F /* MainVC.swift */; };
 		BCF56DFF1EE1CB6D0048556F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF56DFD1EE1CB6D0048556F /* Main.storyboard */; };
-		BCF56E011EE1CB6D0048556F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF56E001EE1CB6D0048556F /* Assets.xcassets */; };
 		BCF56E041EE1CB6D0048556F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF56E021EE1CB6D0048556F /* LaunchScreen.storyboard */; };
+		BCFFB5711EE33C290034EFFC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFB5701EE33C290034EFFC /* LoginVC.swift */; };
+		BCFFB5731EE341E10034EFFC /* CadastroUsuarioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFB5721EE341E10034EFFC /* CadastroUsuarioVC.swift */; };
+		BCFFB5751EE352A90034EFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFFB5741EE352A90034EFFC /* Assets.xcassets */; };
+		BCFFB5771EE3563E0034EFFC /* PostUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFB5761EE3563E0034EFFC /* PostUser.swift */; };
+		BCFFB57A1EE382E80034EFFC /* ListarCarteira.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFB5791EE382E80034EFFC /* ListarCarteira.swift */; };
 		F3E94518BF2878B9A846A738 /* Pods_Pay4All.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57695F047E8D662EBE558AC1 /* Pods_Pay4All.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		57695F047E8D662EBE558AC1 /* Pods_Pay4All.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay4All.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7761016C0FDF32DF4B602F25 /* Pods-Pay4All.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay4All.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay4All/Pods-Pay4All.debug.xcconfig"; sourceTree = "<group>"; };
+		BC2317501EE3939B009FBD57 /* PostCarteira.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCarteira.swift; sourceTree = "<group>"; };
 		BC3EB71A1EE3071900B7E30F /* LeituraQRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeituraQRCodeVC.swift; sourceTree = "<group>"; };
+		BC71838F1EE3345300758BAB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		BC7183911EE338E300758BAB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BC7183931EE339C400758BAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BCC8968A1EE311AF00DDFDE3 /* LeituraCartaoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeituraCartaoVC.swift; sourceTree = "<group>"; };
 		BCC896911EE31FFE00DDFDE3 /* Pay4All-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pay4All-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCC896951EE326F200DDFDE3 /* GenerateQRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateQRCode.swift; sourceTree = "<group>"; };
@@ -29,9 +41,13 @@
 		BCF56DF91EE1CB6D0048556F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCF56DFB1EE1CB6D0048556F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		BCF56DFE1EE1CB6D0048556F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BCF56E001EE1CB6D0048556F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCF56E031EE1CB6D0048556F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCF56E051EE1CB6D0048556F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFFB5701EE33C290034EFFC /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BCFFB5721EE341E10034EFFC /* CadastroUsuarioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroUsuarioVC.swift; sourceTree = "<group>"; };
+		BCFFB5741EE352A90034EFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCFFB5761EE3563E0034EFFC /* PostUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostUser.swift; sourceTree = "<group>"; };
+		BCFFB5791EE382E80034EFFC /* ListarCarteira.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListarCarteira.swift; sourceTree = "<group>"; };
 		D7888B1EFC8933AD738B080E /* Pods-Pay4All.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay4All.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay4All/Pods-Pay4All.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +77,9 @@
 				BCF56DFB1EE1CB6D0048556F /* MainVC.swift */,
 				BCC8968A1EE311AF00DDFDE3 /* LeituraCartaoVC.swift */,
 				BCC896951EE326F200DDFDE3 /* GenerateQRCode.swift */,
+				BCFFB5701EE33C290034EFFC /* LoginVC.swift */,
+				BCFFB5721EE341E10034EFFC /* CadastroUsuarioVC.swift */,
+				BCFFB5791EE382E80034EFFC /* ListarCarteira.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -68,13 +87,24 @@
 		BC3EB71F1EE3099D00B7E30F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BCFFB5761EE3563E0034EFFC /* PostUser.swift */,
+				BC2317501EE3939B009FBD57 /* PostCarteira.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		BC71838E1EE3343900758BAB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC71838F1EE3345300758BAB /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		BCC8968C1EE3124F00DDFDE3 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				BC7183911EE338E300758BAB /* Constants.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -100,16 +130,18 @@
 		BCF56DF81EE1CB6D0048556F /* Pay4All */ = {
 			isa = PBXGroup;
 			children = (
+				BC71838E1EE3343900758BAB /* Services */,
 				BCC8968C1EE3124F00DDFDE3 /* Util */,
 				BC3EB71F1EE3099D00B7E30F /* Model */,
 				BC3EB71E1EE3099500B7E30F /* Controller */,
 				BC3EB71D1EE3098900B7E30F /* View */,
 				BCF56DF91EE1CB6D0048556F /* AppDelegate.swift */,
 				BCF56DFD1EE1CB6D0048556F /* Main.storyboard */,
-				BCF56E001EE1CB6D0048556F /* Assets.xcassets */,
 				BCF56E021EE1CB6D0048556F /* LaunchScreen.storyboard */,
 				BCF56E051EE1CB6D0048556F /* Info.plist */,
+				BC7183931EE339C400758BAB /* GoogleService-Info.plist */,
 				BCC896911EE31FFE00DDFDE3 /* Pay4All-Bridging-Header.h */,
+				BCFFB5741EE352A90034EFFC /* Assets.xcassets */,
 			);
 			path = Pay4All;
 			sourceTree = "<group>";
@@ -196,7 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF56E041EE1CB6D0048556F /* LaunchScreen.storyboard in Resources */,
-				BCF56E011EE1CB6D0048556F /* Assets.xcassets in Resources */,
+				BC7183941EE339C400758BAB /* GoogleService-Info.plist in Resources */,
+				BCFFB5751EE352A90034EFFC /* Assets.xcassets in Resources */,
 				BCF56DFF1EE1CB6D0048556F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,11 +289,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFFB57A1EE382E80034EFFC /* ListarCarteira.swift in Sources */,
 				BCC896961EE326F200DDFDE3 /* GenerateQRCode.swift in Sources */,
+				BC2317511EE3939B009FBD57 /* PostCarteira.swift in Sources */,
 				BC3EB71B1EE3071900B7E30F /* LeituraQRCodeVC.swift in Sources */,
+				BCFFB5711EE33C290034EFFC /* LoginVC.swift in Sources */,
 				BCC8968B1EE311AF00DDFDE3 /* LeituraCartaoVC.swift in Sources */,
+				BC7183901EE3345300758BAB /* DataService.swift in Sources */,
+				BC7183921EE338E300758BAB /* Constants.swift in Sources */,
 				BCF56DFC1EE1CB6D0048556F /* MainVC.swift in Sources */,
 				BCF56DFA1EE1CB6D0048556F /* AppDelegate.swift in Sources */,
+				BCFFB5771EE3563E0034EFFC /* PostUser.swift in Sources */,
+				BCFFB5731EE341E10034EFFC /* CadastroUsuarioVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
