@@ -33,6 +33,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "CadastroUsuarioVC.detect() -&gt; ():CadastroUsuarioVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageAdd.image?.ciImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "LeituraCartaoVC.(salvarPressed(UIButton) -&gt; ()).(closure #1):LeituraCartaoVC.swift">
          <PersistentStrings>
             <PersistentString

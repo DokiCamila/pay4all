@@ -27,5 +27,8 @@ class MainVC: UIViewController {
     @IBAction func geraQRPressed(_ sender: Any) {
         performSegue(withIdentifier: "GeraQRSegue", sender: nil)
     }
+    @IBAction func historicoPressed(_ sender: Any) {
+        performSegue(withIdentifier: "HistoricoVCSegue", sender: nil)
+    }
 }
 

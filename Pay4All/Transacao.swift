@@ -19,6 +19,7 @@ class Transacao {
     private var _valor : String!
     private var _vendedor: String!
     private var _hashBlockChain: String!
+    private var _id : String!
     private var _postRef: FIRDatabaseReference!
     private var _postKey: String!
     
@@ -45,6 +46,9 @@ class Transacao {
     var user: String {
         return _user
     }
+    var id: String {
+        return _id
+    }
     
     var valor: String {
         return _valor
@@ -58,7 +62,7 @@ class Transacao {
         return _hashBlockChain
     }
     
-    init(carteira: String, data: Double, idContrato: String, latitude: String, longitude: String, user: String, valor: String, vedendor: String, hashBlockChain: String) {
+    init(carteira: String, data: Double, idContrato: String, latitude: String, longitude: String, user: String, valor: String, vedendor: String, hashBlockChain: String, id: String) {
         self._carteira = carteira
         self._data = data
         self._idContrato = idContrato
@@ -68,6 +72,7 @@ class Transacao {
         self._valor = valor
         self._vendedor = vedendor
         self._hashBlockChain = hashBlockChain
+        self._id = id
     }
     
     init(postKey: String, postData: Dictionary<String, AnyObject>) {
@@ -107,6 +112,10 @@ class Transacao {
         
         if let hashBlockChain = postData["hashBlockChain"] as? String {
             self._hashBlockChain = hashBlockChain
+        }
+        
+        if let id = postData["id"] as? String {
+            self._id = id
         }
         
         _postRef = DataService.ds.REF_TRANSACAO.child(_postKey)

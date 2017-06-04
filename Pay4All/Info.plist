@@ -45,5 +45,11 @@
 	<string>Precisamos do acesso a sua camera para o Pay4All.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Precisamos do acesso a sua localização para garantir a transação do Pay4All.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Precisamos do acesso a galeria de fotos.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Precisamos do acesso ao microfone para poder autenticar as transações.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Precisamos do acesso ao microfone para poder autenticar as transações.</string>
 </dict>
 </plist>

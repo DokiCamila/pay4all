@@ -68,4 +68,7 @@ class ListarCarteira: UIViewController, UITableViewDelegate, UITableViewDataSour
             return CellVC()
         }
     }
+    @IBAction func historicoPressed(_ sender: Any) {
+        performSegue(withIdentifier: "HistoricoVCSegue", sender: nil)
+    }
 }

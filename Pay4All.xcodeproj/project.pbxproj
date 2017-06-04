@@ -12,6 +12,8 @@
 		BC7183901EE3345300758BAB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71838F1EE3345300758BAB /* DataService.swift */; };
 		BC7183921EE338E300758BAB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7183911EE338E300758BAB /* Constants.swift */; };
 		BC7183941EE339C400758BAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC7183931EE339C400758BAB /* GoogleService-Info.plist */; };
+		BC9090CE1EE42C2300F0A9D9 /* HIstoricoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9090CD1EE42C2300F0A9D9 /* HIstoricoVC.swift */; };
+		BC9090D01EE42C6700F0A9D9 /* HistoricoCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9090CF1EE42C6700F0A9D9 /* HistoricoCellVC.swift */; };
 		BC95D55E1EE3EB8D00692B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC95D55D1EE3EB8D00692B42 /* Assets.xcassets */; };
 		BC95D5601EE3F11A00692B42 /* ReciboVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95D55F1EE3F11A00692B42 /* ReciboVC.swift */; };
 		BC95D5621EE3FC9B00692B42 /* Transacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95D5611EE3FC9B00692B42 /* Transacao.swift */; };
@@ -41,6 +43,8 @@
 		BC71838F1EE3345300758BAB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		BC7183911EE338E300758BAB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BC7183931EE339C400758BAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC9090CD1EE42C2300F0A9D9 /* HIstoricoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIstoricoVC.swift; sourceTree = "<group>"; };
+		BC9090CF1EE42C6700F0A9D9 /* HistoricoCellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricoCellVC.swift; sourceTree = "<group>"; };
 		BC95D55D1EE3EB8D00692B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC95D55F1EE3F11A00692B42 /* ReciboVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReciboVC.swift; sourceTree = "<group>"; };
 		BC95D5611EE3FC9B00692B42 /* Transacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transacao.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				BC9793D31EE3BC3B0070C31C /* ConfirmacaoVC.swift */,
 				BC95D55F1EE3F11A00692B42 /* ReciboVC.swift */,
 				BC95D5631EE4195B00692B42 /* FancyButton.swift */,
+				BC9090CD1EE42C2300F0A9D9 /* HIstoricoVC.swift */,
+				BC9090CF1EE42C6700F0A9D9 /* HistoricoCellVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				BC9793D81EE3D6D60070C31C /* Contrato.swift in Sources */,
 				BC3EB71B1EE3071900B7E30F /* LeituraQRCodeVC.swift in Sources */,
 				BCFFB5711EE33C290034EFFC /* LoginVC.swift in Sources */,
+				BC9090D01EE42C6700F0A9D9 /* HistoricoCellVC.swift in Sources */,
 				BC9793D21EE3ACCE0070C31C /* CellVC.swift in Sources */,
 				BCC8968B1EE311AF00DDFDE3 /* LeituraCartaoVC.swift in Sources */,
 				BC9793D61EE3CA630070C31C /* Location.swift in Sources */,
@@ -327,6 +334,7 @@
 				BC7183921EE338E300758BAB /* Constants.swift in Sources */,
 				BCF56DFC1EE1CB6D0048556F /* MainVC.swift in Sources */,
 				BCF56DFA1EE1CB6D0048556F /* AppDelegate.swift in Sources */,
+				BC9090CE1EE42C2300F0A9D9 /* HIstoricoVC.swift in Sources */,
 				BCFFB5771EE3563E0034EFFC /* PostUser.swift in Sources */,
 				BCFFB5731EE341E10034EFFC /* CadastroUsuarioVC.swift in Sources */,
 			);

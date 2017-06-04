@@ -135,9 +135,13 @@
                                             <outletCollection property="gestureRecognizers" destination="Vca-PL-pcN" appends="YES" id="5B0-kp-qZI"/>
                                         </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="004-invoice" translatesAutoresizingMaskIntoConstraints="NO" id="2hS-1l-QQY">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="004-invoice" translatesAutoresizingMaskIntoConstraints="NO" id="2hS-1l-QQY">
                                         <rect key="frame" x="15" y="222" width="64" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="oeq-uP-uU0" appends="YES" id="B3V-v7-JK2"/>
+                                        </connections>
                                     </imageView>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="001-exit" translatesAutoresizingMaskIntoConstraints="NO" id="ibZ-50-wqR">
                                         <rect key="frame" x="17" y="576" width="60" height="60"/>
@@ -251,6 +255,12 @@
                         <segue destination="5oT-ea-8Qd" kind="show" identifier="GeraQRSegue" id="DY7-iL-SWg"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="oeq-uP-uU0">
+                    <connections>
+                        <action selector="historicoPressed:" destination="BUS-Y1-4pK" id="FwK-zx-AqF"/>
+                        <segue destination="Yx4-4b-buA" kind="show" identifier="HistoricoVCSegue" id="y77-Yi-2hU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1172" y="804.64767616191909"/>
         </scene>
@@ -342,18 +352,6 @@
                                 <color key="textColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWd-go-wLz" customClass="FancyButton" customModule="Pay4All" customModuleProvider="target">
-                                <rect key="frame" x="136" y="297" width="102" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.77497871874699031" green="0.8926013945122242" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
-                                <state key="normal" title="Confirmar">
-                                    <color key="titleColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="confirmarPressed:" destination="FEF-oO-J21" eventType="touchUpInside" id="CKe-0U-NJ4"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ytU-9U-my9">
                                 <rect key="frame" x="16" y="259" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -368,15 +366,48 @@
                                 <color key="textColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="koS-vY-Veu">
-                                <rect key="frame" x="0.0" y="335" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koS-vY-Veu">
+                                <rect key="frame" x="0.0" y="431" width="375" height="216"/>
                             </pickerView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fale a frase:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbk-OB-KFz">
+                                <rect key="frame" x="19" y="335" width="340" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="confirmar pagamento" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OIB-k2-ZIa">
+                                <rect key="frame" x="16" y="364" width="343" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWd-go-wLz" customClass="FancyButton" customModule="Pay4All" customModuleProvider="target">
+                                <rect key="frame" x="98" y="297" width="179" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77497871874699031" green="0.8926013945122242" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="Confirmar">
+                                    <color key="titleColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmarPressed:" destination="FEF-oO-J21" eventType="touchUpInside" id="CKe-0U-NJ4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.71764705882352942" green="0.85490196078431369" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="koS-vY-Veu" firstAttribute="leading" secondItem="sEp-Ps-W2L" secondAttribute="leading" id="FJe-DP-M3T"/>
+                            <constraint firstItem="ORu-m8-1BR" firstAttribute="top" secondItem="koS-vY-Veu" secondAttribute="bottom" constant="20" id="Fns-hT-hpe"/>
+                            <constraint firstAttribute="trailing" secondItem="koS-vY-Veu" secondAttribute="trailing" id="ZkT-ic-SYN"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="carteiraField" destination="ytU-9U-my9" id="cQ3-PQ-2Mb"/>
+                        <outlet property="confirmarBtn" destination="FWd-go-wLz" id="cde-Bt-N5k"/>
+                        <outlet property="frase1lbl" destination="pbk-OB-KFz" id="hAR-LL-T4y"/>
+                        <outlet property="fraseTexto" destination="OIB-k2-ZIa" id="wWE-Vs-6Rh"/>
                         <outlet property="pickerText" destination="koS-vY-Veu" id="PWv-o0-ybF"/>
                         <outlet property="valorLbl" destination="nWS-5Q-uN0" id="AhH-kN-MeE"/>
                         <segue destination="2u3-gM-cxT" kind="show" identifier="ReciboVC" id="hyW-lf-mgn"/>
@@ -484,10 +515,10 @@
             </objects>
             <point key="canvasLocation" x="3293.5999999999999" y="804.64767616191909"/>
         </scene>
-        <!--View Controller-->
+        <!--IstoricoVC-->
         <scene sceneID="D9a-sq-Hz9">
             <objects>
-                <viewController id="Yx4-4b-buA" sceneMemberID="viewController">
+                <viewController id="Yx4-4b-buA" customClass="HIstoricoVC" customModule="Pay4All" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bZ7-EZ-qDV"/>
                         <viewControllerLayoutGuide type="bottom" id="2Bc-hw-9ao"/>
@@ -496,20 +527,177 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Historico Transaçao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aes-OE-ZLd">
-                                <rect key="frame" x="154" y="20" width="185" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hJ0-7T-7Au">
+                                <rect key="frame" x="103" y="150" width="272" height="517"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.212433815" green="0.30077058080000002" blue="0.37572276589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoricoCell" rowHeight="76" id="ZQS-Aw-KDU" customClass="HistoricoCellVC" customModule="Pay4All" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="272" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZQS-Aw-KDU" id="AbW-cu-7MJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="272" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ETy-Rs-IRR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="272" height="75.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data: 03/06/2017 08:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBg-6E-0z3">
+                                                            <rect key="frame" x="8" y="8" width="174" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOC=9999999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTV-wT-cyE">
+                                                            <rect key="frame" x="8" y="27" width="174" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor: R$ 9999,99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gg-UE-9Wp">
+                                                            <rect key="frame" x="8" y="46" width="136" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carteira: Teste" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98B-0U-efC">
+                                                            <rect key="frame" x="136" y="27" width="136" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.71764705880000002" green="0.85490196080000003" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="carteiralbl" destination="98B-0U-efC" id="J3D-hU-CaC"/>
+                                            <outlet property="datalbl" destination="YBg-6E-0z3" id="2yj-ba-ZNr"/>
+                                            <outlet property="doclbl" destination="CTV-wT-cyE" id="mkO-pK-BMy"/>
+                                            <outlet property="nomeField" destination="YBg-6E-0z3" id="CnZ-pY-NSd"/>
+                                            <outlet property="valorlbl" destination="3gg-UE-9Wp" id="KVp-tf-R7e"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nb6-Jh-i1o">
+                                <rect key="frame" x="93" y="0.0" width="10" height="667"/>
+                                <color key="backgroundColor" red="0.2933611572" green="0.64235615729999995" blue="0.73487788440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="gkQ-SB-sDI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQi-Qx-DOG">
+                                <rect key="frame" x="0.0" y="0.0" width="93" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="005-women-account" translatesAutoresizingMaskIntoConstraints="NO" id="pCa-Nz-hz5">
+                                        <rect key="frame" x="9" y="34" width="77" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="003-wallet" translatesAutoresizingMaskIntoConstraints="NO" id="0XC-ut-syl">
+                                        <rect key="frame" x="12" y="117" width="68" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="004-invoice" translatesAutoresizingMaskIntoConstraints="NO" id="ZTZ-Ee-YVh">
+                                        <rect key="frame" x="15" y="222" width="64" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="001-exit" translatesAutoresizingMaskIntoConstraints="NO" id="ovI-Or-z5M">
+                                        <rect key="frame" x="17" y="576" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="002-cogwheel" translatesAutoresizingMaskIntoConstraints="NO" id="ANr-C5-PQx">
+                                        <rect key="frame" x="8" y="314" width="76" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17232307790000001" green="0.69549703600000001" blue="0.87916916609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="DDe-qE-8sJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nQ-W8-9R7">
+                                <rect key="frame" x="103" y="0.0" width="272" height="150"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoFinalWhiteSF" translatesAutoresizingMaskIntoConstraints="NO" id="GOK-UN-x00">
+                                        <rect key="frame" x="218" y="19" width="46" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAS-uA-gti">
+                                        <rect key="frame" x="0.0" y="19" width="44" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="&lt; ">
+                                            <color key="titleColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="voltarPressed:" destination="2W8-v2-eG0" eventType="touchUpInside" id="Iia-2K-RHD"/>
+                                            <action selector="voltarPressed:" destination="MUF-fR-1Tx" eventType="touchUpInside" id="lyx-i2-tly"/>
+                                            <action selector="voltarPressed:" destination="HkZ-pU-zyx" eventType="touchUpInside" id="vJn-hQ-J2n"/>
+                                            <action selector="voltarPressed:" destination="Yx4-4b-buA" eventType="touchUpInside" id="y57-Qw-rzn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Historico Transações" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aes-OE-ZLd">
+                                        <rect key="frame" x="43" y="73" width="185" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4Vv-fp-NBQ">
+                                        <rect key="frame" x="8" y="106" width="256" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="Abf-kG-jW7"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Data"/>
+                                            <segment title="Carteira"/>
+                                            <segment title="Valor"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.85490196080000003" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4Vv-fp-NBQ" firstAttribute="leading" secondItem="0nQ-W8-9R7" secondAttribute="leading" constant="8" id="0yV-vA-dRK"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Vv-fp-NBQ" secondAttribute="bottom" constant="16" id="Ppl-rN-Qzo"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Vv-fp-NBQ" secondAttribute="trailing" constant="8" id="RdW-Hf-0gq"/>
+                                    <constraint firstAttribute="height" constant="150" id="boX-RE-oeA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.71764705882352942" green="0.85490196078431369" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0nQ-W8-9R7" firstAttribute="top" secondItem="woX-fc-hkr" secondAttribute="top" id="DTK-Dd-DFi"/>
+                            <constraint firstAttribute="trailing" secondItem="hJ0-7T-7Au" secondAttribute="trailing" id="Zxy-Gr-ZFI"/>
+                            <constraint firstAttribute="bottom" secondItem="nb6-Jh-i1o" secondAttribute="bottom" id="fss-J1-wZP"/>
+                            <constraint firstItem="2Bc-hw-9ao" firstAttribute="top" secondItem="xQi-Qx-DOG" secondAttribute="bottom" id="hbG-9Y-f1S"/>
+                            <constraint firstItem="xQi-Qx-DOG" firstAttribute="top" secondItem="woX-fc-hkr" secondAttribute="top" id="lqo-hl-EAx"/>
+                            <constraint firstItem="hJ0-7T-7Au" firstAttribute="top" secondItem="0nQ-W8-9R7" secondAttribute="bottom" id="mvn-ge-s3g"/>
+                            <constraint firstItem="hJ0-7T-7Au" firstAttribute="leading" secondItem="nb6-Jh-i1o" secondAttribute="trailing" id="ozv-Xy-CnY"/>
+                            <constraint firstAttribute="bottom" secondItem="hJ0-7T-7Au" secondAttribute="bottom" id="qdA-4s-sgm"/>
+                            <constraint firstItem="nb6-Jh-i1o" firstAttribute="top" secondItem="woX-fc-hkr" secondAttribute="top" id="rMl-ht-ZfZ"/>
+                            <constraint firstItem="0nQ-W8-9R7" firstAttribute="leading" secondItem="nb6-Jh-i1o" secondAttribute="trailing" id="tvA-AC-3S5"/>
+                            <constraint firstItem="nb6-Jh-i1o" firstAttribute="leading" secondItem="xQi-Qx-DOG" secondAttribute="trailing" id="wgB-z9-Uca"/>
+                            <constraint firstAttribute="trailing" secondItem="0nQ-W8-9R7" secondAttribute="trailing" id="xt9-0J-CnQ"/>
+                            <constraint firstItem="xQi-Qx-DOG" firstAttribute="leading" secondItem="woX-fc-hkr" secondAttribute="leading" id="zhC-RE-OX9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="hJ0-7T-7Au" id="h00-DX-7HC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jD-nK-zZS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1168.8" y="2160.2698650674665"/>
+            <point key="canvasLocation" x="1061.5999999999999" y="2194.4527736131936"/>
         </scene>
         <!--Listar Carteira-->
         <scene sceneID="aDI-C6-oKZ">
@@ -625,9 +813,13 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="004-invoice" translatesAutoresizingMaskIntoConstraints="NO" id="5vd-4O-YGq">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="004-invoice" translatesAutoresizingMaskIntoConstraints="NO" id="5vd-4O-YGq">
                                         <rect key="frame" x="15" y="222" width="64" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Uwx-x8-tCE" appends="YES" id="a6o-aJ-1ch"/>
+                                        </connections>
                                     </imageView>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="001-exit" translatesAutoresizingMaskIntoConstraints="NO" id="eCJ-DK-HEj">
                                         <rect key="frame" x="17" y="576" width="60" height="60"/>
@@ -680,6 +872,12 @@
                 <tapGestureRecognizer id="749-vV-V19">
                     <connections>
                         <action selector="exitPressed:" destination="2W8-v2-eG0" id="5Ag-lr-F0i"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Uwx-x8-tCE">
+                    <connections>
+                        <action selector="historicoPressed:" destination="2W8-v2-eG0" id="CAL-76-H5q"/>
+                        <segue destination="Yx4-4b-buA" kind="show" identifier="HistoricoVCSegue" id="1qX-zo-Mrl"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -971,6 +1169,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="4y4-6d-ok1">
+                                <rect key="frame" x="139" y="379" width="77" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="LU6-be-eg7" appends="YES" id="TJu-2h-9pU"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.71764705882352942" green="0.85490196078431369" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -980,11 +1186,17 @@
                         <outlet property="confirmarSenhaField" destination="guz-0Q-bws" id="JVh-XI-OMn"/>
                         <outlet property="dddField" destination="xod-aF-MuW" id="Ehw-YI-WaK"/>
                         <outlet property="emailField" destination="HKP-IP-Sko" id="c07-qz-50N"/>
+                        <outlet property="imageAdd" destination="4y4-6d-ok1" id="QY9-hr-voS"/>
                         <outlet property="nomeField" destination="kXh-lW-1K0" id="ozu-T6-xyJ"/>
                         <outlet property="senhaField" destination="chn-KU-yMP" id="Vn0-Sd-n3f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ly-9f-2w4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LU6-be-eg7">
+                    <connections>
+                        <action selector="imagePressed:" destination="MUF-fR-1Tx" id="da6-xa-W70"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1172" y="142.57871064467767"/>
         </scene>
@@ -997,12 +1209,14 @@
         <image name="004-invoice" width="642" height="642"/>
         <image name="005-women-account" width="911" height="796"/>
         <image name="Line" width="240" height="1"/>
+        <image name="add-image" width="88" height="88"/>
         <image name="logoFinalInvSFpng" width="1727" height="2006"/>
         <image name="logoFinalWhiteSF" width="1689" height="2075"/>
         <image name="qrcode" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4Xx-jQ-S5e"/>
-        <segue reference="yfj-42-oLe"/>
+        <segue reference="hzN-Tz-HOb"/>
+        <segue reference="1qX-zo-Mrl"/>
     </inferredMetricsTieBreakers>
 </document>
